@@ -260,6 +260,8 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
   border-radius: 10px;
   padding: 10px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .mobile-nav * {
@@ -369,6 +371,10 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
 }
 
+#hero h1 span {
+  color: #3498db;
+}
+
 #hero h2 {
   color: #484848;
   margin-bottom: 50px;
@@ -405,7 +411,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991px) {
   #hero {
-    height: 100vh;
+    height: 80vh;
+    margin-top: 3rem!important;
   }
   #hero .animated {
     -webkit-animation: none;
@@ -422,6 +429,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   #hero {
     margin-top: 20px;
+    text-align: center;
   }
   #hero h1 {
     font-size: 28px;
@@ -504,6 +512,12 @@ section {
 
 .section-title p {
   margin: 15px 0 0 0;
+}
+
+@media (max-width: 768px){
+  .section-title h2::before, .section-title h2::after {
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -946,6 +960,10 @@ section {
 }
 
 @media (max-width: 767px) {
+  .testimonials{
+    background-color: #e8f3fc!important;
+  }
+  
   .testimonials .testimonial-wrap {
     padding-left: 0;
   }

@@ -59,7 +59,7 @@
       class: 'mobile-nav d-lg-none'
     });
     $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
+    $('body').prepend('<button type="button" class="mobile-nav-toggle mt-2 d-lg-none"><i class="icofont-navigation-menu"></i></button>');
     $('body').append('<div class="mobile-nav-overly"></div>');
 
     $(document).on('click', '.mobile-nav-toggle', function(e) {
@@ -151,6 +151,8 @@
     autoplay: true,
     dots: true,
     loop: true,
+    smartSpeed: 6800,
+    autoplaySpeed: 1200,
     responsive: {
       0: {
         items: 1
@@ -192,7 +194,7 @@
     autoplay: true,
     dots: true,
     loop: true,
-    items: 1
+    items: 1,
   });
 
   // Init AOS
