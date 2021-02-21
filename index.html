@@ -305,32 +305,30 @@
               </div>
 
               <div class="info mt-2">
-
                 <div>
                   <i class="ri-mail-send-line"></i>
                   <p>xatalweb@gmail.com</p>
                 </div>
-  
               </div>
             </div>
           </div>
 
           <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-            <form action="/enviar-mensaje" method="post" role="form" class="php-email-form">
+            <form action="https://formspree.io/f/xrgovjrw" method="POST" role="form" class="php-email-form" id="my-form">
               <div class="form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" data-rule="minlen:4" data-msg="Introduce tu nombre" />
+                <input type="text" name="author" class="form-control" id="author" placeholder="Nombre" data-rule="minlen:4" data-msg="Introduce tu nombre" required />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Introduce una dirección de email valida" />
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Introduce una dirección de email valida" required/>
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Introduce un aunsto de al menos 8 caracteres" />
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:8" data-msg="Introduce un asunto de al menos 8 caracteres" required/>
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="text" rows="5" data-rule="required" data-msg="Introduce un mensaje" placeholder="Mensaje"></textarea>
+                <textarea class="form-control" name="text" rows="5" data-rule="required" data-msg="Introduce un mensaje" placeholder="Mensaje" required></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
@@ -338,7 +336,8 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Tu mensaje ha sido enviado. En breve te contactaremos.</div>
               </div>
-              <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+              <div class="text-center"><button id="my-form-button" type="submit">Enviar Mensaje</button></div>
+              <div id="my-form-status"></div>
             </form>
           </div>
 
@@ -439,6 +438,7 @@
 
   <!-- Template Main JS File -->
   <script src="/static/js/main.js"></script>
+  <script src="/static/js/form.js"></script>
 
 </body>
 

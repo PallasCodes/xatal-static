@@ -100,3 +100,8 @@ body{
 .navItem a{
   text-decoration: none!important;
 }
+
+#my-form-status {
+  background-color: #26157c;
+  color: #fff;
+}
